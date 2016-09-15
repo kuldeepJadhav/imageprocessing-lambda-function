@@ -145,7 +145,7 @@ exports.handler = function(event, context) {
 	promise.then(function(data) {
 		console.log('Successfully resized the file ', data);
 		console.log('hitting the service to store the image urls');
-		imageUpdater.storeImageUrls(postId, env, data);
+		//imageUpdater.storeImageUrls(postId, env, data);
 
 	}, function(err) {
 		console.log('Error resizing the file ', event.Records[0].s3.bucket.name, fileName);
